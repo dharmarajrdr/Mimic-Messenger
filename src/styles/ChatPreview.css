@@ -6,15 +6,23 @@
   border-left: 5px solid inherit;
   background-color: #2b1e4f;
 }
+.currentlyViewing {
+  background-color: #e5e5ff;
+  color: #000;
+}
 .unreadMessage {
   border-left: 5px solid #6f6196;
 }
-.ChatPreview:hover {
+.ChatPreview:not(.currentlyViewing):hover {
   background-color: #271c46d0;
   transition-duration: 0.5s;
 }
 .ChatPreview .userProfile {
   position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-size: cover;
 }
 .ChatPreview .myStatus {
   font-size: 18px;
@@ -22,9 +30,12 @@
   bottom: 0;
   right: 0;
   color: red;
-  background-color: #2b1e4f;
   padding: 5px;
   border-radius: 100%;
+  background-color: #2b1e4f;
+}
+.currentlyViewing .myStatus {
+  background-color: #e5e5ff;
 }
 .ChatPreview .myStatusIsOnline {
   color: green;
@@ -33,27 +44,32 @@
   color: red;
 }
 .ChatPreview .myStatusIsOffline {
-  color: yellow;
+  color: #FF9100;
 }
 .ChatPreview .name_and_latestmessage {
   width: 100%;
   overflow: hidden;
   padding: 10px 20px;
 }
-.ChatPreview .name_and_latestmessage p {
+.ChatPreview .name_and_latestmessage .username {
   font-size: 15px;
   margin-bottom: 5px;
+}
+.ChatPreview:not(.currentlyViewing) .name_and_latestmessage .latestMessage {
+  color: #aaa;
+}
+.currentlyViewing .name_and_latestmessage .latestMessage {
+  color: #555;
 }
 .ChatPreview .name_and_latestmessage .latestMessage {
   font-size: 14px;
   margin-top: 2px;
+  line-height: 15px;
   text-wrap: nowrap;
-  color: #aaa;
 }
-.profilePicture {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
+.ChatPreview .name_and_latestmessage .latestMessage .latestMessageTypeIsMeta {
+  padding-right: 5px;
+  box-sizing: content-box;
 }
 
 .ChatPreview .callIcon {
@@ -66,4 +82,5 @@
 .ChatPreview .callIcon:hover {
   background-color: #4a3487;
   transition-duration: 0.5s;
+  color: #fff;
 }

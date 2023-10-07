@@ -1,0 +1,24 @@
+#RightHeader {
+  padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+#RightHeader img {
+  margin-right: 20px;
+}
+
+#RightHeader .search_and_more {
+  gap: 25px;
+}
+
+#RightHeader div #name_and_about p {
+  padding-bottom: 2px;
+}
+
+#RightHeader div #name_and_about span {
+  font-size: 12px;
+  padding-top: 2px;
+  color: #555;
+}

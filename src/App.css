@@ -28,6 +28,20 @@
   justify-content: flex-start;
 }
 
+.FRCB {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FCSC{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .icons {
   cursor: pointer;
 }

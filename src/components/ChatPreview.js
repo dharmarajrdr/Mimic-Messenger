@@ -1,3 +1,4 @@
+import { FaRegImage } from "react-icons/fa";
 import { RiWifiOffLine } from "react-icons/ri";
 import { TbCircleDotFilled } from "react-icons/tb";
 import React from 'react'
@@ -6,9 +7,9 @@ import { FaPhoneAlt } from 'react-icons/fa';
 
 export default function ChatPreview(props) {
     return (
-        <div className={`ChatPreview FRCS ${props.element.isUnreadMessage ? 'unreadMessage' : ''}`}>
-            <div className={`userProfile FRCC`}>
-                <img src='https://avatars.githubusercontent.com/u/66894285?v=4' className='profilePicture icons' />
+        <div className={`ChatPreview FRCS ${props.element.isOpened ? 'currentlyViewing' : props.element.isUnreadMessage ? 'unreadMessage' : ''}`}>
+            <div className='userProfile FRCC'>
+                <img src={props.element.profile_picture} className='profilePicture icons' />
                 {
                     props.element.onCall ? <FaPhoneAlt className="myStatus myStatusIsOnCall" title={props.element.status} /> :
                         props.element.isAvailable ? <TbCircleDotFilled className="myStatus myStatusIsOnline" title={props.element.status} /> :
@@ -16,10 +17,17 @@ export default function ChatPreview(props) {
                 }
             </div>
             <div className="name_and_latestmessage">
-                <p className="FRCS nowrap">
+                <p className="FRCS nowrap username">
                     {props.element.name}
                 </p>
-                <span className='latestMessage'>{props.element.latestMessage}</span>
+                <span className='latestMessage FRCS'>
+                    <span>
+                        {props.element.latestMessageType === 'meta' && <FaRegImage className="latestMessageTypeIsMeta" />}
+                    </span>
+                    <span>
+                        {props.element.latestMessage}
+                    </span>
+                </span>
             </div>
             <div className='callIcon FRCC'>
                 <FaPhoneAlt className="icons" />

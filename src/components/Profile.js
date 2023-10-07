@@ -1,8 +1,8 @@
-import { SlSettings } from "react-icons/sl";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
 import React from 'react'
 import '../styles/Profile.css'
+import { RiSettings5Line } from "react-icons/ri";
 
 export default function Profile() {
     return (
@@ -16,7 +16,7 @@ export default function Profile() {
                 <span>Online</span>
             </div>
             <FaBell className="icons" id="DND" />
-            <SlSettings className="icons" id="settings" />
+            <RiSettings5Line className="icons" id="more_action" />
         </div>
     )
 }
