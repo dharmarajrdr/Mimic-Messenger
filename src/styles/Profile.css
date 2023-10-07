@@ -1,0 +1,40 @@
+#Profile {
+  color: #fff;
+  padding: 20px 30px;
+  background-color: #2b1e4f;
+}
+#Profile #myProfile {
+  position: relative;
+}
+#Profile #myStatus {
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: red;
+  background-color: #2b1e4f;
+  padding: 5px;
+  border-radius: 100%;
+}
+#Profile #name_and_status {
+  width: 100%;
+  padding: 10px 20px;
+}
+#Profile #name_and_status span {
+  font-size: 10px;
+  color: #ddd;
+}
+.profilePicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+#Profile #DND {
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+#Profile #settings{
+  font-size: 20px;
+}

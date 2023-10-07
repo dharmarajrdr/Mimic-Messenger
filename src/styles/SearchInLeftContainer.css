@@ -1,0 +1,28 @@
+#SearchInLeftContainer {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #271c46;
+}
+
+#SearchInLeftContainer input {
+  width: 100%;
+  padding: 10px 25px 10px 10px;
+  border: none;
+  color: #ddd;
+  border-bottom: 1px solid rgb(64, 46, 117);
+  background-color: inherit;
+}
+
+#SearchInLeftContainer input:focus {
+  border-color: #5f3cbe;
+  transition-duration: 0.25s;
+}
+
+#SearchInLeftContainer #searchIcon {
+  position: absolute;
+  color: #777;
+  font-size: 12px;
+  right: 25px;
+}

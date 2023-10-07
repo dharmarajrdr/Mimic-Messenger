@@ -1,0 +1,22 @@
+#ChatGroupCall {
+  color: #fff;
+  border: 1px solid #362563;
+  background-color: #271c46;
+}
+#ChatGroupCall div {
+  width: 33%;
+  cursor: pointer;
+  padding: 20px;
+}
+#ChatGroupCall #activeTabAmongChatGroupCall {
+  background-color: rgb(40, 24, 83);
+}
+
+#ChatGroupCall div span {
+  padding: 0px 7px;
+  font-size: 14px;
+}
+
+#ChatGroupCall div .icons {
+  font-size: 15px;
+}
