@@ -1,3 +1,73 @@
-#RightMain{
-    height: 100%;
+#RightMain {
+  height: calc(100% - 160px);
+  overflow: auto;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#RightMain::-webkit-scrollbar {
+  display: none;
+}
+
+#RightMain .messageDiv {
+  padding: 5px;
+}
+
+#RightMain .messageDiv .dp_time {
+  margin: 0px 15px;
+}
+
+#RightMain .messageDiv .dp_time .dp_div {
+  position: relative;
+}
+
+#RightMain .messageDiv .dp_time .dp_div .myStatus {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5ff;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 100%;
+  box-sizing: content-box;
+}
+
+#RightMain .messageDiv .dp_time .sent_time {
+  font-size: 10px;
+  margin-top: 2px;
+  color: #777;
+}
+
+#RightMain .sentby_and_message {
+  width: 100%;
+}
+
+#RightMain .sentby_and_message .message {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 5px;
+  max-width: 60%;
+  border-radius: 25px;
+  border-top-left-radius: 2px;
+  background-color: #44337b;
+  color: #fff;
+  text-wrap: balance;
+  position: relative;
+}
+
+#RightMain .sentby_and_message .message .sent_and_viewed {
+  position: absolute;
+  right: 10px;
+  bottom: 7px;
+}
+
+#RightMain .messageDivRight .message {
+  padding: 10px 30px 10px 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 2px;
+  color: #333;
+  background-color: #fff;
+  text-align: end;
 }

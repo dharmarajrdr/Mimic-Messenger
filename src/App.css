@@ -35,10 +35,52 @@
   justify-content: space-between;
 }
 
-.FCSC{
+.FCSC {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+}
+
+.FCCC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FRSS {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.FCsE {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.FRCE {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.FRSE {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.FCEC {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -53,4 +95,14 @@
 
 .nowrap {
   text-wrap: nowrap;
+}
+
+.myStatusIsOnline {
+  color: green;
+}
+.myStatusIsOnCall {
+  color: red;
+}
+.myStatusIsOffline {
+  color: #ff9100;
 }

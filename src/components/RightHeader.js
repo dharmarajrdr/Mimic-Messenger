@@ -10,7 +10,7 @@ export default function RightHeader() {
         <img src='https://i.pinimg.com/736x/da/56/cd/da56cd8d973d8916ea3ed397de80b429.jpg' className="profilePicture icons" />
         <div className="FCSC" id="name_and_about">
           <p>Rajinikanth</p>
-          <span>Hello world</span>
+          <span>Aandavan soldran, indha arunachalam seiraan.</span>
         </div>
       </div>
       <div className="search_and_more FRCC">
